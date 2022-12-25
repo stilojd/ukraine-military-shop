@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56554f0f28e3174b9b0f26242568028, type: 3}
+  m_Name: Backpack 2
+  m_EditorClassIdentifier: 
+  bodyPartName: No Backpack
+  bodyPartAnimationID: 2
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: 117543458a044254f9e88b90808823e4, type: 2}
+  - {fileID: 7400000, guid: 67d17f9d207ddbf449f31a3eb7c0cd33, type: 2}
+  - {fileID: 7400000, guid: 61a8677bba3ddcb418f08371f2d626e9, type: 2}
+  - {fileID: 7400000, guid: 1193dffb8d0d8ee40b3171c0e99e43fc, type: 2}
+  - {fileID: 7400000, guid: 73a551076e35cd0418a8624445ee9359, type: 2}
+  - {fileID: 7400000, guid: 2d3ad59e1d6d12147bd977de3a504634, type: 2}
+  - {fileID: 7400000, guid: 92513751abed701459f8e9d7e5f909f9, type: 2}
+  - {fileID: 7400000, guid: 32abf9f2b94a3b74e9e29148293c5f34, type: 2}

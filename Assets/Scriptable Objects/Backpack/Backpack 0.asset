@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56554f0f28e3174b9b0f26242568028, type: 3}
+  m_Name: Backpack 0
+  m_EditorClassIdentifier: 
+  bodyPartName: Coyote Backpack
+  bodyPartAnimationID: 0
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: 5e0bc0c902e5992478025d81db6cfc8a, type: 2}
+  - {fileID: 7400000, guid: faa9415f9bcaf544ba194a6fee4cf99d, type: 2}
+  - {fileID: 7400000, guid: d2472a6947aa1a94692d8f1c46491335, type: 2}
+  - {fileID: 7400000, guid: cfa13c387d3f9ec41a9f802a6f60116f, type: 2}
+  - {fileID: 7400000, guid: 5e0bc0c902e5992478025d81db6cfc8a, type: 2}
+  - {fileID: 7400000, guid: bf734572da5c22e46ac5b47dab4d48c1, type: 2}
+  - {fileID: 7400000, guid: d96f9ff847fbbe345a95a19cc3a439fe, type: 2}
+  - {fileID: 7400000, guid: a2ff3e4717e2ae345a2c56d4ec3758de, type: 2}
