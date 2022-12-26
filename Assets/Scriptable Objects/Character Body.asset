@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterBodyParts:
   - bodyPartName: Body
-    bodyPart: {fileID: 11400000, guid: 04184ccc187ebeb4898134b291bec24b, type: 2}
+    bodyPart: {fileID: 11400000, guid: d041d63d6bf34a4428f9c6e2d3e5c9d1, type: 2}
   - bodyPartName: Hair
-    bodyPart: {fileID: 11400000, guid: b17d978efd003c642b9314a82452880b, type: 2}
+    bodyPart: {fileID: 11400000, guid: 54d101486d17d2e4fa598c1bb13e1783, type: 2}
   - bodyPartName: Torso
-    bodyPart: {fileID: 11400000, guid: 1344766a0a65f164aa04b98df2bc5bd3, type: 2}
+    bodyPart: {fileID: 11400000, guid: c3f831f6ec419834a9bda6a8bab60e4d, type: 2}
   - bodyPartName: Legs
-    bodyPart: {fileID: 11400000, guid: 3446583dbcbcedb49ae7587f7ef2e7dc, type: 2}
+    bodyPart: {fileID: 11400000, guid: 3583a2f1d03b86f4b9683e1954874954, type: 2}
   - bodyPartName: Backpack
-    bodyPart: {fileID: 11400000, guid: c58f9c0262e68a9468c179f1a40239d4, type: 2}
+    bodyPart: {fileID: 11400000, guid: 520735f16d5be6a43acc0d222bcc099a, type: 2}

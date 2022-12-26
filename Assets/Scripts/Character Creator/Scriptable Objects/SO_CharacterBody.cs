@@ -15,5 +15,6 @@ public class SO_CharacterBody : ScriptableObject
 public class BodyPart
 {
     public string bodyPartName;
-    public SO_BodyPart bodyPart;
+    public Clothes bodyPart;
+    // public SO_BodyPart bodyPart;
 }

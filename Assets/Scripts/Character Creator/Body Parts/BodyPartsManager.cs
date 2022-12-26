@@ -42,6 +42,7 @@ public class BodyPartsManager : MonoBehaviour
         {
             // Get current body part
             string partType = bodyPartTypes[partIndex];
+            
             // Get current body part ID
             string partID = characterBody.characterBodyParts[partIndex].bodyPart.bodyPartAnimationID.ToString();
 
