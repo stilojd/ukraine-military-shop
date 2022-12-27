@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0d6d9745108d454389da7de5fdf54ec, type: 3}
-  m_Name: Coyote Backpack
+  m_Name: Backpack_Empty
   m_EditorClassIdentifier: 
   _sprite: {fileID: 1873845739, guid: 0d9e344d300ce5840a9f3f24ac7fd6bf, type: 3}
   _price: 89
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 7400000, guid: bf734572da5c22e46ac5b47dab4d48c1, type: 2}
   - {fileID: 7400000, guid: d96f9ff847fbbe345a95a19cc3a439fe, type: 2}
   - {fileID: 7400000, guid: a2ff3e4717e2ae345a2c56d4ec3758de, type: 2}
-  bodyPartAnimationID: 0
+  bodyPartAnimationID: 2
   BodyPartIndex: 4

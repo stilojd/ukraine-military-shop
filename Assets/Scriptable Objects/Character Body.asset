@@ -16,10 +16,10 @@ MonoBehaviour:
   - bodyPartName: Body
     bodyPart: {fileID: 11400000, guid: d041d63d6bf34a4428f9c6e2d3e5c9d1, type: 2}
   - bodyPartName: Hair
-    bodyPart: {fileID: 11400000, guid: 54d101486d17d2e4fa598c1bb13e1783, type: 2}
+    bodyPart: {fileID: 11400000, guid: 1788aaa9db1bff34692f7cc2a51731a5, type: 2}
   - bodyPartName: Torso
-    bodyPart: {fileID: 11400000, guid: c3f831f6ec419834a9bda6a8bab60e4d, type: 2}
+    bodyPart: {fileID: 11400000, guid: 304910299ff1c714bb6e9bb9dd8a1518, type: 2}
   - bodyPartName: Legs
-    bodyPart: {fileID: 11400000, guid: 3583a2f1d03b86f4b9683e1954874954, type: 2}
+    bodyPart: {fileID: 11400000, guid: f89997ee29f228747a2e05ac37b31938, type: 2}
   - bodyPartName: Backpack
-    bodyPart: {fileID: 11400000, guid: 520735f16d5be6a43acc0d222bcc099a, type: 2}
+    bodyPart: {fileID: 11400000, guid: 3de622dae1630264cac6f23793bcef0d, type: 2}

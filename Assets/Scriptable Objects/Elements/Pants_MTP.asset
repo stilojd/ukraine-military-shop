@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0d6d9745108d454389da7de5fdf54ec, type: 3}
-  m_Name: MTP Pants
+  m_Name: Pants_MTP
   m_EditorClassIdentifier: 
   _sprite: {fileID: 1694296210, guid: 6b66b5672b6779b45b30db92d7b96d0d, type: 3}
   _price: 82
+  _name: Pants -MTP
   allBodyPartAnimations:
   - {fileID: 7400000, guid: e1d9d9659405c4b49a6573decb8fcfbb, type: 2}
   - {fileID: 7400000, guid: 0b671657d0236e846b6b0ca473079f17, type: 2}

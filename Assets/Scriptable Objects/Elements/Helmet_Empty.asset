@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0d6d9745108d454389da7de5fdf54ec, type: 3}
-  m_Name: MTP Helmet
+  m_Name: Helmet_Empty
   m_EditorClassIdentifier: 
-  _sprite: {fileID: -993826460, guid: 27b7d8e9b97a9ba40810e6886c6227f5, type: 3}
+  _sprite: {fileID: 0}
   _price: 26
   allBodyPartAnimations:
   - {fileID: 7400000, guid: de2c7eacb04ddc94589585a6701088c8, type: 2}
@@ -23,5 +23,5 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 6092ac73708c7c047b7944ac8e234b37, type: 2}
   - {fileID: 7400000, guid: 3799b30d7350b474fbdd0717d2f8818e, type: 2}
   - {fileID: 7400000, guid: b4df4737918210f40b40c3ec13aeade2, type: 2}
-  bodyPartAnimationID: 0
+  bodyPartAnimationID: 2
   BodyPartIndex: 1

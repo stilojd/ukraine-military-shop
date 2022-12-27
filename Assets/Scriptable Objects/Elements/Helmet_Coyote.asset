@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0d6d9745108d454389da7de5fdf54ec, type: 3}
-  m_Name: Coyote Helmet
+  m_Name: Helmet_Coyote
   m_EditorClassIdentifier: 
-  _sprite: {fileID: -993826460, guid: 27b7d8e9b97a9ba40810e6886c6227f5, type: 3}
+  _sprite: {fileID: -673259264, guid: 7c2385be11737f844a86779c2249c27d, type: 3}
   _price: 26
+  _name: Helmet - Coyote
   allBodyPartAnimations:
   - {fileID: 7400000, guid: 0c2ccb54fd2f0554b843168383d3ee27, type: 2}
   - {fileID: 7400000, guid: 2aac1a43ef5dc2243bcd2769a133a191, type: 2}

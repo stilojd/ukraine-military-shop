@@ -1,6 +1,4 @@
-﻿// Code written by tutmo (youtube.com/tutmo)
-// For help, check out the tutorial - https://youtu.be/PNWK5o9l54w
-
+﻿
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,13 +6,14 @@ public class BodyPartsManager : MonoBehaviour
 {
     // ~~ 1. Updates All Animations to Match Player Selections
 
-    [SerializeField] private SO_CharacterBody characterBody;
+    [SerializeField] private SO_CharacterBody _characterBody;
+    [SerializeField] private Clothes[] _defaultClothes;
 
     // String Arrays
     [SerializeField] private string[] bodyPartTypes;
     [SerializeField] private string[] characterStates;
     [SerializeField] private string[] characterDirections;
-    
+
     // Animation
     private Animator animator;
     private AnimationClip animationClip;
@@ -31,8 +30,19 @@ public class BodyPartsManager : MonoBehaviour
         defaultAnimationClips = new AnimationClipOverrides(animatorOverrideController.overridesCount);
         animatorOverrideController.GetOverrides(defaultAnimationClips);
 
+        // Set defult body part animations
+        SetDefultBodyParts();
+
         // Set body part animations
         UpdateBodyParts();
+    }
+
+    private void SetDefultBodyParts()
+    {
+        for (int index = 0; index < _characterBody.characterBodyParts.Length - 1; index++)
+        {
+            _characterBody.characterBodyParts[index].bodyPart = _defaultClothes[index];
+        }
     }
 
     public void UpdateBodyParts()
@@ -42,9 +52,9 @@ public class BodyPartsManager : MonoBehaviour
         {
             // Get current body part
             string partType = bodyPartTypes[partIndex];
-            
+
             // Get current body part ID
-            string partID = characterBody.characterBodyParts[partIndex].bodyPart.bodyPartAnimationID.ToString();
+            string partID = _characterBody.characterBodyParts[partIndex].bodyPart.bodyPartAnimationID.ToString();
 
             for (int stateIndex = 0; stateIndex < characterStates.Length; stateIndex++)
             {
@@ -55,8 +65,8 @@ public class BodyPartsManager : MonoBehaviour
 
                     // Get players animation from player body
                     // ***NOTE: Unless Changed Here, Animation Naming Must Be: "[Type]_[Index]_[state]_[direction]" (Ex. Body_0_idle_down)
-                    animationClip = Resources.Load<AnimationClip>("Player Animations/" + partType + "/" + partType + "_" + partID + "_" + state + "_" + direction);
-
+                    animationClip = Resources.Load<AnimationClip>("Player Animations/" + partType + "/" + partType +
+                                                                  "_" + partID + "_" + state + "_" + direction);
                     // Override default animation
                     defaultAnimationClips[partType + "_" + 0 + "_" + state + "_" + direction] = animationClip;
                 }
@@ -69,7 +79,9 @@ public class BodyPartsManager : MonoBehaviour
 
     public class AnimationClipOverrides : List<KeyValuePair<AnimationClip, AnimationClip>>
     {
-        public AnimationClipOverrides(int capacity) : base(capacity) { }
+        public AnimationClipOverrides(int capacity) : base(capacity)
+        {
+        }
 
         public AnimationClip this[string name]
         {
