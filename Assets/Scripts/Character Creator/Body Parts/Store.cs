@@ -71,4 +71,19 @@ public class Store : MonoBehaviour
         _buyButton.onClick.RemoveAllListeners();
         _buyButton.onClick.AddListener(() => Buy(element));
     }
+
+    public void SwitchStoreUiState()
+    {
+        bool state = !this.gameObject.activeSelf;
+        this.gameObject.SetActive(state);
+        _inventory.SetSellFunction(state);
+        _inventory.gameObject.SetActive(state);
+    }
+
+    public void Exit()
+    {
+        this.gameObject.SetActive(false);
+        _inventory.SetSellFunction(false);
+        _inventory.gameObject.SetActive(false);   
+    }
 }

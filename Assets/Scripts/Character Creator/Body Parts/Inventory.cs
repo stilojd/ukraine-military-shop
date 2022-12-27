@@ -134,4 +134,9 @@ public class Inventory : MonoBehaviour
         _elements.Add(clothes);
         InstantiateButton(_elements.Count - 1);
     }
+
+    public void SetSellFunction(bool activated)
+    {
+        _sellButton.gameObject.SetActive(activated);
+    }
 }
