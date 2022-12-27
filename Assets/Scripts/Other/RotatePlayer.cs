@@ -1,62 +1,62 @@
-// Code written by tutmo (youtube.com/tutmo)
-// For help, check out the tutorial - https://youtu.be/PNWK5o9l54w
-
 using UnityEngine;
 
-public class RotatePlayer : MonoBehaviour
+namespace Assets.Scripts.Other
 {
-    // ~~ 1. Handles animation updates to rotate player
-
-    private Animator animator;
-    private Vector2[] positions;
-    private int currentPosition;
-
-    private void Start()
+    public class RotatePlayer : MonoBehaviour
     {
-        animator = GetComponent<Animator>();
-        CreatePositions();
-    }
+        // ~~ 1. Handles animation updates to rotate player
 
-    private void CreatePositions()
-    {
-        positions = new Vector2[4];
-        positions[0] = new Vector2(0, -1);      // Down
-        positions[1] = new Vector2(-1, 0);      // Left
-        positions[2] = new Vector2(0, 1);       // Up
-        positions[3] = new Vector2(1, 0);       // Right
-    }
+        private Animator animator;
+        private Vector2[] positions;
+        private int currentPosition;
 
-    public void RotateLeft()
-    {
-        if (currentPosition < positions.Length - 1)
+        private void Start()
         {
-            currentPosition++;
-        }
-        else
-        {
-            currentPosition = 0;
+            animator = GetComponent<Animator>();
+            CreatePositions();
         }
 
-        UpdatePosition();
-    }
-
-    public void RotateRight()
-    {
-        if (currentPosition > 0)
+        private void CreatePositions()
         {
-            currentPosition--;
-        }
-        else
-        {
-            currentPosition = positions.Length - 1;
+            positions = new Vector2[4];
+            positions[0] = new Vector2(0, -1); // Down
+            positions[1] = new Vector2(-1, 0); // Left
+            positions[2] = new Vector2(0, 1); // Up
+            positions[3] = new Vector2(1, 0); // Right
         }
 
-        UpdatePosition();
-    }
+        public void RotateLeft()
+        {
+            if (currentPosition < positions.Length - 1)
+            {
+                currentPosition++;
+            }
+            else
+            {
+                currentPosition = 0;
+            }
 
-    private void UpdatePosition()
-    {
-        animator.SetFloat("moveX", positions[currentPosition].x);
-        animator.SetFloat("moveY", positions[currentPosition].y);
+            UpdatePosition();
+        }
+
+        public void RotateRight()
+        {
+            if (currentPosition > 0)
+            {
+                currentPosition--;
+            }
+            else
+            {
+                currentPosition = positions.Length - 1;
+            }
+
+            UpdatePosition();
+        }
+
+        private void UpdatePosition()
+        {
+            animator.SetFloat("moveX", positions[currentPosition].x);
+            animator.SetFloat("moveY", positions[currentPosition].y);
+        }
     }
 }

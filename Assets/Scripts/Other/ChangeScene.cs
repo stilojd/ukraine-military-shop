@@ -4,10 +4,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+namespace Assets.Scripts.Other
 {
-    public void SelectScene(int sceneIndex)
+    public class ChangeScene : MonoBehaviour
     {
-        SceneManager.LoadScene(sceneIndex);
+        public void SelectScene(int sceneIndex)
+        {
+            SceneManager.LoadScene(sceneIndex);
+        }
     }
 }

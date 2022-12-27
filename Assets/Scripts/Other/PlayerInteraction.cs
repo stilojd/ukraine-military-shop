@@ -1,20 +1,24 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.CharacterInventory;
+using UnityEngine;
 
-public class PlayerInteraction : MonoBehaviour
+namespace Assets.Scripts.Other
 {
-    [SerializeField] private GameObject _store;
-    [SerializeField] private Inventory _inventory;
-
-    private void Update()
+    public class PlayerInteraction : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        [SerializeField] private GameObject _store;
+        [SerializeField] private Inventory _inventory;
+
+        private void Update()
         {
-            _inventory.gameObject.SetActive(!_inventory.gameObject.activeSelf);
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                _inventory.gameObject.SetActive(!_inventory.gameObject.activeSelf);
+            }
         }
-    }
 
-    public void Take(int money)
-    {
-        _inventory.AddMoney(money);
+        public void Take(int money)
+        {
+            _inventory.AddMoney(money);
+        }
     }
 }
