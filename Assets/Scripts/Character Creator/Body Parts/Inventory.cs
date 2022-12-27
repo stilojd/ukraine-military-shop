@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
         _elements = new List<Clothes>();
         LoadElements();
         UpdateUi();
+        this.gameObject.SetActive(false);
     }
 
     private void LoadElements()
@@ -95,6 +96,12 @@ public class Inventory : MonoBehaviour
     public void Pay(int price)
     {
         _wallet.PutOut(price);
+        UpdateUi();
+    }
+    
+    public void AddMoney(int amount)
+    {
+        _wallet.PutIn(amount);
         UpdateUi();
     }
 
