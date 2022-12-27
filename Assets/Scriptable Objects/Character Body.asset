@@ -22,4 +22,4 @@ MonoBehaviour:
   - bodyPartName: Legs
     bodyPart: {fileID: 11400000, guid: f89997ee29f228747a2e05ac37b31938, type: 2}
   - bodyPartName: Backpack
-    bodyPart: {fileID: 11400000, guid: 3de622dae1630264cac6f23793bcef0d, type: 2}
+    bodyPart: {fileID: 11400000, guid: 520735f16d5be6a43acc0d222bcc099a, type: 2}

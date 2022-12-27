@@ -39,7 +39,7 @@ public class BodyPartsManager : MonoBehaviour
 
     private void SetDefultBodyParts()
     {
-        for (int index = 0; index < _characterBody.characterBodyParts.Length - 1; index++)
+        for (int index = 0; index < _characterBody.characterBodyParts.Length ; index++)
         {
             _characterBody.characterBodyParts[index].bodyPart = _defaultClothes[index];
         }
