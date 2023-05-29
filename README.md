@@ -5,7 +5,8 @@ Control:
  “TAB” – Open Inventory Window
  “F” – Open Store Window/Open Chest
 
-Documentation
+Documentation:
+
  In this project, the main challenge was to create a logic that let me put on items
 on the character and update animation for every body part to make it visualize on
 the character.
@@ -33,6 +34,4 @@ Also, if you find a chest, press "F" to take gold.
 and DialogueTrigger. Every person on the map has Dialogue that will be sand to
 DialogueManager. If the Player comes close to the person, a dialog will start.
  Overall, I believe that I did a good job in the interview, of course it has to be
-improving, and I want to change some decisions, but I spend 100% of my efforts to
-go through this test task. I am really glad to have this opportunity and want to say
-thank you, it was the most interesting test task I have ever seen.
+improving, and I want to change some decisions.
